@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+.mainbox{
+    color: aliceblue;
+    background: url(2970049.jpg);
+    height: 100vh;
+    background-size: cover;
+}
+.btn_one{
+    font-size: x-large;
+    position: absolute;
+    top: 20px;
+    left: 20px; 
+    transition: 0.2s ease;;
+}
+.btn_one:hover{
+    font-size: xx-large;
+}
+.slidebar{
+    position: fixed;
+    width: 300px;
+    height: 100vh;
+    background: rgba(0,0,0,0.9);
+    box-shadow: 0 0 10px wheat;
+    left: -330px;
+    transition: ease 0.3s;
+}
+
+.slidebar .logo{
+    position: absolute;
+    width: 100%;
+    box-shadow: 0 0 2px wheat;
+    height: 55px;
+}
+.slidebar .logo p{
+    font-size: xx-large;
+    color: whitesmoke;
+    position: absolute;
+    width: 100%;
+    left: 20px;
+}
+.slidebar .btn_two{
+    position: absolute;
+    left: 270px;
+    font-size: x-large;
+    color: wheat;
+}
+.slidebar .menu{
+    position: absolute;
+    width: 100%;
+    top: 70px;
+}
+.slidebar .menu li{
+    text-align: left;
+    padding: 10px;
+    font-size: large;
+    color: whitesmoke;
+    transition: 0.5s ease;
+}
+.slidebar .menu li i{
+    padding: 5px 5px;
+}
+.slidebar .social_media{
+    position: absolute;
+    width: 100%;
+    bottom: 30px;
+    left: 25%
+}
+.slidebar .social_media i{
+    padding: 5px 5px;
+    opacity: 0.5;
+    transition: 0.5s ease;
+}
+#home{
+    display: none;
+}
+.slidebar .menu li:hover{
+    background-color: bisque;
+    color: black;
+    box-shadow: 1px 1px 10px black;
+}
+.slidebar .social_media i:hover{
+    color: whitesmoke;
+    opacity: 1;
+    font-size: larger;
+}
+#home:checked ~ .slidebar{
+    left: 0;
+}
